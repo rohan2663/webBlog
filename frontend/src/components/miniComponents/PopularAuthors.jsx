@@ -7,7 +7,7 @@ const PopularAuthors = () => {
   useEffect(() => {
     const fetchAuthors = async () => {
       const { data } = await axios.get(
-        "https://webblog-1-6fkk.onrender.com/api/v1/user/authors",
+        "http://localhost:4000/api/v1/user/authors",
         { withCredentials: true }
       );
       setAuthors(data.authors);
