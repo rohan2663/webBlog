@@ -3,10 +3,11 @@ import { Context } from "../../main";
 
 const MyProfile = () => {
   const { user } = useContext(Context);
+  console.log(user)
   return (
     <section className="profile">
       <div className="avatar">
-        <img src="/pic.jpg" alt="avatar" />
+        <img src={user.avatar.url} alt="avatar" />
       </div>
       <div className="user-detail">
         <p>
