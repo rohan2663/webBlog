@@ -39,7 +39,6 @@ const Footer = () => {
               <Link to={"/"}>Home</Link>
               <Link to={"/blogs"}>Blogs</Link>
               <Link to={"/about"}>About</Link>
-              <Link to={"/dashboaard"}>Dashboard</Link>
             </ul>
           </div>
           <div className="categories">
