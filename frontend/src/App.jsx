@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/myprofile",
+          "https://webblog-1-6fkk.onrender.com/api/v1/user/myprofile",
           {
             withCredentials: true,
           }
@@ -43,7 +43,7 @@ const App = () => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/blog/all",
+          "https://webblog-1-6fkk.onrender.com/api/v1/blog/all",
           { withCredentials: true }
         );
         setBlogs(data.allBlogs);
